@@ -1,0 +1,60 @@
+/* styles.css */
+body {
+    display: grid;
+    grid-template-columns: 1fr 3fr 1fr; /* Defines a three-column grid */
+    grid-template-rows: 0fr 1fr 1fr 0fr; /* Defines four rows */
+    grid-template-areas:
+        "header header header"
+        "nav main aside"
+        "nav main aside"
+        "footer footer footer";
+    min-height: 150vh; /* Sets a minimum height for the content boxes */
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    grid-area: header; /* Places the header in the "header" grid area */
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+}
+
+nav {
+    grid-area: nav; /* Places the navigation in the "nav" grid area */
+    background-color: #555;
+    color: #fff;
+    padding: 10px;
+}
+
+main {
+    grid-area: main; /* Places the main content in the "main" grid area */
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Creates a two-column grid within the "main" area */
+    gap: 20px;
+    padding: 20px;
+}
+
+.grid-item {
+    background-color: #f4f4f4;
+    padding: 20px;
+}
+
+aside {
+    grid-area: aside; /* Places the sidebar in the "aside" grid area */
+    background-color: #777;
+    color: #fff;
+    padding: 10px;
+}
+
+footer {
+    grid-area: footer; /* Places the footer in the "footer" grid area */
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+}
+
+@media (min-width: 900px) {
+    .cards { grid-template-columns: repeat(3, 1fr); }
+  }
+  
