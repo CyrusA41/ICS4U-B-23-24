@@ -8,7 +8,7 @@ body {
         "nav main aside"
         "nav main aside"
         "footer footer footer";
-    min-height: 145vh; /* Sets a minimum height for the content boxes */
+    min-height: 150vh; /* Sets a minimum height for the content boxes */
     margin: 0;
     padding: 0;
 }
