@@ -1,0 +1,246 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 0;
+    margin: 0;
+    background-color: whitesmoke;
+}
+
+.container{
+    width: 90%;
+    margin: auto;
+    overflow: hidden;
+}
+
+.container2{
+    width: 100%;
+    margin: auto;
+    overflow: hidden;
+    display: grid;
+    grid-template-columns: repeat(3, 2fr);
+    grid-gap: 0px;
+    min-height: 95vh;
+    margin: 0;
+    padding: 0;
+}
+
+header{
+    background-color: black;
+    color: white;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    min-height: 70px;
+    border-bottom: greenyellow 7px solid;
+}
+
+.header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center; /* Center vertically */
+}
+
+.navbar a:first-child {
+    margin-left: 0; /* Remove margin for the first link */
+}
+
+.navbar{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+a{
+    color: white;
+    text-decoration: none;
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+    margin-left: 20px; /* Add some spacing between navigation links */
+}
+  
+.navbar a:hover {
+    color: greenyellow;
+}
+
+.navbar a:first-child {
+    margin-left: 0; /* Remove margin for the first link */
+}
+
+.dropdown {
+    float: left;
+    overflow: hidden;
+}
+
+/* Dropdown content (hidden by default) */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: black;
+    min-width: 160px;
+    z-index: 1;
+}
+
+/* Style the dropdown links */
+.dropdown-content a {
+    display: flex;
+    flex-direction: column;
+    color: white;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+/* Change color on hover */
+.dropdown-content a:hover {
+    background-color: greenyellow;
+    color: black;
+}
+
+/* Show the dropdown content on hover */
+.dropdown:hover .dropdown-content, .dropdown-content:hover {
+    display: block;
+}
+
+.menu-toggle {
+    display: none; /* Hide by default on larger screens */
+    font-size: 24px;
+    cursor: pointer;
+    background: none;
+    border: none;
+    color: white;
+}
+
+/* CSS to show the navigation menu when it's active */
+.navbar.active {
+    display: flex;
+}
+
+.contact-section {
+    background: white;
+    padding: 100px;
+    text-align: center;
+    border: 1px solid #ccc;
+}
+
+.contact-section h2 {
+    font-size: 30px;
+    margin: 40px 0;
+}
+
+.contact-form {
+    min-width: 300px;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+textarea {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+textarea {
+    height: 120px;
+}
+
+.submit-button {
+    background: black;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.submit-button:hover {
+    background: greenyellow;
+}
+
+.about-image {
+    flex: 1; /* Take up available space */
+    text-align: center; /* Image aligned to the center */
+}
+
+.about-image img {
+    max-width: 320%; /* Ensure image responsiveness */
+}
+
+.footer { 
+    background-color: black;
+    color: white;
+    padding: 5px 0; /* Adjust the padding as needed */
+    padding-bottom: 50px;
+    text-align: center; /* Center-align footer content */
+    font-size: 17px; /* Adjust the font size as needed */
+    border-top: greenyellow 7px solid;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    height: 10px;
+    padding: 5px;
+}
+
+.footer-content a{
+    padding: 5px;
+}
+
+.footer-content img {
+    width: 30px; /* Adjust the width as needed */
+    height: 30px; /* Adjust the height as needed */
+    margin-bottom: 10px;
+}
+
+@media (max-width: 768px) {
+    .container2 {
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Cards extend to the edge and centered */
+        justify-items: center; /* Center-align the cards horizontally */
+    }
+
+    .menu-toggle {
+        display: block; /* Display on narrow screens */
+    }
+
+    .navbar {
+        display: none; /* Hide the original navbar on narrow screens */
+        flex-direction: column; /* Stack items in a column for small screens */
+        text-align: center; /* Center-align items in the column */
+        background: black; /* Add background color for the dropdown menu */
+    }
+
+    .navbar.active {
+        display: flex; /* Show the navigation menu when it's active */
+    }
+
+    .contact-image {
+        flex: 1; /* Take up available space */
+        text-align: center; /* Image aligned to the center */
+        margin: auto;
+    }
+    
+    .contact-image img {
+        max-width: 100%; /* Ensure image responsiveness */
+        height: auto;
+    }
+}
