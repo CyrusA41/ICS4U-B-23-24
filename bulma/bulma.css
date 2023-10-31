@@ -1,0 +1,17 @@
+body{
+    background-color: rgb(246, 249, 255);
+    padding-bottom: 200px;
+}
+
+.checkbox{
+    padding-bottom: 10px;
+}
+
+.pfp{
+    padding-bottom: 30px;
+    padding-left: 140px
+}
+
+.image{
+    max-width: 50%;
+}
