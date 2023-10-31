@@ -3,412 +3,50 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>peeepepeeoeoeo</title>
+    <title>Login Page</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.css">
-    <style>
-      .hero-gradient{
-        background: linear-gradient(to right, rgb(95, 121, 254), lightblue);
-      }
-      .card-content{
-        overflow-y: scroll;
-        max-height: 225px;
-      }
-
-      .card-content::-webkit-scrollbar {
-        display: none;
-      }
-      
-      .border-top{
-        border-top: blue 5px solid;
-      }
-      
-    </style>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.css">
+    <link rel="stylesheet" href="bulma.css"> 
   </head>
   <body>
-    
-    <section class="section p-1 border-top">
-      <nav class="navbar " role="navigation" aria-label="main navigation">
-          <div id="navbarBasicExample" class="navbar-menu">
-              
-            <div class="navbar-start pl-6 ml-6">
-             <div class="navbar-item">
-                  Bulma Admin
-             </div>
-              <a class="navbar-item">
-                <strong>Home</strong>
-              </a>
         
-              <a class="navbar-item">
-                  <strong>Orders</strong>
-              </a>
-        
-              <a class="navbar-item">
-                  <strong>Payments</strong>
-                </a>
-
-                <a class="navbar-item">
-                  <strong>Exceptions</strong>
-                </a>
-
-                <a class="navbar-item">
-                  <strong>Reports</strong>
-                </a>
-
-            </div>
-        
-          
-          </div>
-        </nav>
-  </section>
-    
-        <section class="section has-background-white-ter ">
-          <div class="columns">
-            <div class="column">
-              <div class="container ml-6 pl-6">
-                <div class="menu">
-                  <p class="menu-label">
-                    <strong class="has-text-grey">General</strong>
-                  </p>
-                  <ul class="menu-list">
-                    
-                    <li><a><strong>Dashboard</strong></a></li>
-                    <li><a><strong>Customers</strong></a></li>
-                  </ul>
-                  <p class="menu-label">
-                    <strong class="has-text-grey">Administration</strong>
-                  </p>
-                  <ul class="menu-list">
-                    <li><a><strong>Team Settings</strong></a></li>
-                    <li>
-                      <a><strong>Manage Your Team</strong></a>
-                      <ul>
-                        <li><a><strong>Members</strong></a></li>
-                        <li><a><strong>Plugins</strong></a></li>
-                        <li><a><strong>Add a member</strong></a></li>
-                      </ul>
-                    </li>
-                    <li><a><strong>Invitations</strong></a></li>
-                    <li><a><strong>Cloud Storage Environment Settings</strong></a></li>
-                    <li><a><strong>Authentication</strong></a></li>
-                  </ul>
-                  <p class="menu-label">
-                    <strong class="has-text-grey">Transactions</strong>
-                  </p>
-                  <ul class="menu-list">
-                    <li><a><strong>Payments</strong></a></li>
-                    <li><a><strong>Transfers</strong></a></li>
-                    <li><a><strong>Balance</strong></a></li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-            <div class="column is-two-thirds">
-              <div class="container">
-                <nav class="breadcrumb" aria-label="breadcrumbs">
-                  <ul>
-                    <li><a href="#">Bulma</a></li>
-                    <li><a href="#">Templates</a></li>
-                    <li><a href="#">Examples</a></li>
-                    <li class="is-active"><a href="#" aria-current="page">Admin</a></li>
-                  </ul>
-                </nav>
-                <section class="hero is-primary hero-gradient">
-                  <div class="hero-body pt-5 pb-5">
-                    <p class="title">
-                      Hello, Admin.
-                    </p>
-                    <p class="subtitle">
-                      I hope you are having a great day!
-                    </p>
-                  </div>
-                </section>
-        
-                <section class="section pt-5 pl-0 pr-0">
-                  <nav class="level">
-                    
-                    <div class="level-item has-text-centered card py-4 ml-2 mr-2">
-                      <div>
-                        <p class="title">439k</p>
-                        <p>Users</p>
-                      </div>
-                    </div>
-                    <div class="level-item has-text-centered card py-4 ml-2 mr-2">
-                      <div>
-                        <p class="title">59k</p>
-                        <p>Products</p>
-                      </div>
-                    </div>
-                    <div class="level-item has-text-centered card py-4 ml-2 mr-2">
-                      <div>
-                        <p class="title">3.4k</p>
-                        <p>Open-orders</p>
-                      </div>
-                    </div>
-                    <div class="level-item has-text-centered card py-4 ml-2 mr-2">
-                      <div>
-                        <p class="title">19</p>
-                        <p>Exceptions</p>
-                      </div>
-                    </div>
-                  </nav>
-                </section>
-
-                <div class="tile is-ancestor">
-
-                  <div class="tile is-parent is-6">
-                    <section class="section tile is-child p-0">
-                      
-                      <div class="card ">
-                        <header class="card-header">
-                          <p class="card-header-title">
-                            Component
-                          </p>
-                          <button class="card-header-icon" aria-label="more options">
-                            <span class="icon">
-                              <i class="fas fa-angle-down" aria-hidden="true"></i>
-                            </span>
-                          </button>
-                        </header>
-                        <div class="card-content">
-                          <div class="content">
-                            <nav class="level">
-                                    <div class="level-left">
-                                      <div class="level-item">
-                                        <span class="icon is-small"><i class="fa-regular fa-bell"></i></span>
-                                      </div>
-                                      <div class="level-item">
-                                        <p>Lorem ipsum dolor sit amet.</p>
-                                      </div>
-                                    </div>
-                                    <div class="level-right">
-                                      <button class="button is-primary">Action</button>
-                                    </div>
-                            </nav>
-                            <nav class="level">
-                              <div class="level-left">
-                                <div class="level-item">
-                                  <span class="icon is-small"><i class="fa-regular fa-bell"></i></span>
-                                </div>
-                                <div class="level-item">
-                                  <p>Lorem ipsum dolor sit amet.</p>
-                                </div>
-                              </div>
-                              <div class="level-right">
-                                <button class="button is-primary">Action</button>
-                              </div>
-                            </nav>
-                            <nav class="level">
-                              <div class="level-left">
-                                <div class="level-item">
-                                  <span class="icon is-small"><i class="fa-regular fa-bell"></i></span>
-                                </div>
-                                <div class="level-item">
-                                  <p>Lorem ipsum dolor sit amet.</p>
-                                </div>
-                              </div>
-                              <div class="level-right">
-                                <button class="button is-primary">Action</button>
-                              </div>
-                            </nav>
-                            <nav class="level">
-                              <div class="level-left">
-                                <div class="level-item">
-                                  <span class="icon is-small"><i class="fa-regular fa-bell"></i></span>
-                                </div>
-                                <div class="level-item">
-                                  <p>Lorem ipsum dolor sit amet.</p>
-                                </div>
-                              </div>
-                              <div class="level-right">
-                                <button class="button is-primary">Action</button>
-                              </div>
-                            </nav>
-                            <nav class="level">
-                              <div class="level-left">
-                                <div class="level-item">
-                                  <span class="icon is-small"><i class="fa-regular fa-bell"></i></span>
-                                </div>
-                                <div class="level-item">
-                                  <p>Lorem ipsum dolor sit amet.</p>
-                                </div>
-                              </div>
-                              <div class="level-right">
-                                <button class="button is-primary">Action</button>
-                              </div>
-                          </nav>
-                          <nav class="level">
-                            <div class="level-left">
-                              <div class="level-item">
-                                <span class="icon is-small"><i class="fa-regular fa-bell"></i></span>
-                              </div>
-                              <div class="level-item">
-                                <p>Lorem ipsum dolor sit amet.</p>
-                              </div>
-                            </div>
-                            <div class="level-right">
-                              <button class="button is-primary">Action</button>
-                            </div>
-                          </nav>
-                          <nav class="level">
-                              <div class="level-left">
-                                <div class="level-item">
-                                  <span class="icon is-small"><i class="fa-regular fa-bell"></i></span>
-                                </div>
-                                <div class="level-item">
-                                  <p>Lorem ipsum dolor sit amet.</p>
-                                </div>
-                              </div>
-                              <div class="level-right">
-                                <button class="button is-primary">Action</button>
-                              </div>
-                          </nav>
-                          <nav class="level">
-                              <div class="level-left">
-                                <div class="level-item">
-                                  <span class="icon is-small"><i class="fa-regular fa-bell"></i></span>
-                                </div>
-                                <div class="level-item">
-                                  <p>Lorem ipsum dolor sit amet.</p>
-                                </div>
-                              </div>
-                              <div class="level-right">
-                                <button class="button is-primary">Action</button>
-                              </div>
-                          </nav>
-                          <nav class="level">
-                              <div class="level-left">
-                                <div class="level-item">
-                                  <span class="icon is-small"><i class="fa-regular fa-bell"></i></span>
-                                </div>
-                                <div class="level-item">
-                                  <p>Lorem ipsum dolor sit amet.</p>
-                                </div>
-                              </div>
-                              <div class="level-right">
-                                <button class="button is-primary">Action</button>
-                              </div>
-                          </nav>
-                          <nav class="level">
-                              <div class="level-left">
-                                <div class="level-item">
-                                  <span class="icon is-small"><i class="fa-regular fa-bell"></i></span>
-                                </div>
-                                <div class="level-item">
-                                  <p>Lorem ipsum dolor sit amet.</p>
-                                </div>
-                              </div>
-                              <div class="level-right">
-                                <button class="button is-primary">Action</button>
-                              </div>
-                          </nav>
-                                
-                          </div>
-                        </div>
-                        <footer class="card-footer has-text-centered">
-                          <p class="card-footer-item">view all</p>
-                        </footer>
-                      </div>
-                    
-                    
-                    </section>
-                  </div>
-                  <div class="tile is-vertical is-parent">
-                    <div class="tile is-child m-0">
-                    <section class="section p-0">
-                      
-                      <div class="card ">
-                        <header class="card-header">
-                          <p class="card-header-title">
-                            Component
-                          </p>
-                          <button class="card-header-icon" aria-label="more options">
-                            <span class="icon">
-                              <i class="fas fa-angle-down" aria-hidden="true"></i>
-                            </span>
-                          </button>
-                        </header>
-                        <div class="card-content">
-                          <div class="content">
-                            <div class="field">
-                              <div class="control has-icons-left has-icons-right">
-                                <input class="input" type="text" placeholder="" value="">
-                                <span class="icon is-small is-left">
-                                  <i class="fa-solid fa-magnifying-glass" style="color: #b1bccd;"></i>
-                                </span>
-                                <span class="icon is-small is-right" >
-                                  <i class="fas fa-check" style="color: #b1bccd;"></i>
-                                </span>
-                              </div>
-                            </div>
-                          
-                                
-                          </div>
-                        </div>
-                        
-                      </div>
-                    
-                    
-                    </section>
-                    </div>
-                    <div class="tile is-child ">
-                      <section class="section p-0">
-                        
-                        <div class="card ">
-                          <header class="card-header">
-                            <p class="card-header-title">
-                              Component
-                            </p>
-                            <button class="card-header-icon" aria-label="more options">
-                              <span class="icon">
-                                <i class="fas fa-angle-down" aria-hidden="true"></i>
-                              </span>
-                            </button>
-                          </header>
-                          <div class="card-content">
-                            <div class="content">
-                              <div class="field">
-                                <div class="control has-icons-left has-icons-right">
-                                  <input class="input" type="text" placeholder="" value="">
-                                  <span class="icon is-small is-left">
-                                    <i class="fa-solid fa-magnifying-glass" style="color: #b1bccd;"></i>
-                                  </span>
-                                  <span class="icon is-small is-right" >
-                                    <i class="fas fa-check" style="color: #b1bccd;"></i>
-                                  </span>
-                                </div>
-                              </div>
+            <section class="section">
+                <div class="container has-text-centered">
+                    <div class="columns">
+                        <div class="column"></div>
+                        <div class="column">
                             
-                                  
-                            </div>
+                            <h3 class="title">Login</h3>
+                            
+                            <p class="subtitle">Please login to proceed.</p>
+                            <div class="pfp">
+                              <figure class="image">
+                                  <img class="is-rounded" src="https://via.placeholder.com/150">
+                              </figure> 
                           </div>
-                      
+                            <form class="box">
+                                <div class="field">
+                                <div class="control">
+                                    <input class="input is-medium is-info" type="email" placeholder="Your Email">
+                                </div>
+                                </div>
+                            
+                                <div class="field">
+                                <div class="control">
+                                    <input class="input is-medium" type="password" placeholder="Your Password">
+                                </div>
+                                </div>
+                                    <label class="checkbox"><input type="checkbox"> Remember me</label>
+                                <button class="button is-block is-info is-large is-fullwidth">Login <i class="fa fa-sign-in"></i></button>
+                            </form>
+                            <h4 class="below"><a href=#>Sign Up</a> · <a href=#>Forgot Password</a> · <a href=#>Need Help</a></p>
+                                    
+                     
                         </div>
-                      
-                      
-                      </section>
+                        <div class="column">
+                        </div>
                     </div>
-                  </div>
-                  
-                  
                 </div>
-              
-
-                 
-                
-
-                
-
-            </div>
-          </div>
-        </section>
-    
-      
-        <footer class="footer has-background-white-ter">
-        
-        </footer>
-    
-      
-    
-  </body>
+            </section>
+    </body>
 </html>
