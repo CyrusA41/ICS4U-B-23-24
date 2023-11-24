@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="section">
+    <div class="columns">
+        <div class="column">
+        <h3>1st number:</h3>
+        <ul id="nums1"></ul></ul>
+        </div>
+        <div class="column">
+        <h3>2nd number:</h3>
+        <ul id="nums2"></ul>
+        </div>
+        <div class="column">
+        <h3>function:</h3>
+        <ul id="funcs"></ul>
+        </div>
+        <div class="column">
+        <h3>equals:</h3>
+        <ul id="equals"></ul>
+        </div>
+    </div>
+    </div>
+
+    <script>
+        const nums1 = [0,1,2,3,4,5,6,7,8,9]
+        const nums2 = [0,1,2,3,4,5,6,7,8,9]
+        const funcs = ['+', '-', 'x', '/']
+        const equals = ['=']
+        const ul1 = document.querySelector('#nums1')
+        const ul2 = document.querySelector('#nums2')
+        const ul3 = document.querySelector('#funcs')
+        const ul4 = document.querySelector('#equals')
+        let firstNum = 0;
+        let secondNum = 0;
+        let func = '';
+
+        nums1.forEach((el) => {
+            let li = document.createElement('li')
+            li.textContent = el
+            ul1.appendChild(li)
+            li.addEventListener('click', (e)=>{
+                let temp = e.target
+                firstNum = parseInt(temp.innerText)
+                console.log(temp)
+            })
+        })
+
+        nums2.forEach((el) => {
+            let li = document.createElement('li')
+            li.textContent = el
+            ul2.appendChild(li)
+            li.addEventListener('click', (e)=>{
+                let temp = e.target
+                secondNum = parseInt(temp.innerText)
+                console.log(temp)
+            })
+        })
+
+        funcs.forEach((el) => {
+            let li = document.createElement('li')
+            li.textContent = el
+            ul3.append(li)
+            li.addEventListener('click', (e)=>{
+                let temp = e.target
+                func = temp.innerText
+                console.log(temp)
+            })
+        })
+
+        equals.forEach((el) => {
+            let li = document.createElement('li')
+            li.textContent = el
+            ul4.append(li)
+            li.addEventListener('click', (e)=>{
+                compute()
+            })
+        })
+
+        function compute(){
+            if(func==='+')
+                console.log(firstNum+secondNum)
+            else if(func==='-')
+                console.log(firstNum-secondNum)
+            else if(func==='x')
+                console.log(firstNum*secondNum)
+            else if(func==='/')
+                console.log(firstNum/secondNum)
+        }
+    </script>
+</body>
+</html>
