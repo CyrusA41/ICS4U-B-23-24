@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+    <title>Standings</title>
+    <style>
+        @media (max-width: 768px) {
+            .remove {   
+                display: none
+            }
+        }
+    </style>
+</head>
+<body onresize="createTable()">
+    <nav class="navbar has-shadow is-white">
+        <div class="navbar-brand">
+            <a href="" class="navbar-item">
+                <img src="pllogo.png" alt="site logo" style="max-height: 70px" class="px=2 py=2">
+            </a>
+            <a class="navbar-burger" id="burger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </a>
+        </div>
+        
+        <div class="navbar-menu" id="nav-links">
+            <div class="navbar-end">
+                <a href="sportsWebsite.html" class="navbar-item">Standings</a>
+                <a href="matches.html" class="navbar-item">Matches</a>
+            </div>
+        </div>
+    </nav>
+
+    <div class="section">
+        <h1 class="is-size-1 is-black has-text-centered has-text-weight-bold">Standings</h1>
+    </div>
+
+
+    <div class="section">
+        <div class="container">
+            <div class="columns is-multiline">
+                <div class="column"></div>
+                <div class="column">
+                    <table id="standings" class="table is-fullwidth">
+                        <thead>
+                            <tr>
+                                <th>Club</th>
+                                <th id="W" sortOrder="DESC">W</th>
+                                <th id="D" sortOrder="DESC">D</th>
+                                <th id="L" sortOrder="ASC">L</th>
+                                <th id="PTS" sortOrder="DESC">PTS</th>
+                                <th id="GF" class="remove" sortOrder="DESC">GF</th>
+                                <th id="GA" class="remove" sortOrder="ASC">GA</th>
+                                <th id="GD" class="remove" sortOrder="DESC">GD</th>
+                                <th class="remove">Last 5</th>
+                            </tr>
+                        </thead>
+                        <tbody></tbody>
+                    </table>
+                </div>
+                <div class="column"></div>
+            </div>
+        </div>
+    </div>
+
+    <script src="sportsWebsite.js"></script>
+</body>
+</html>
