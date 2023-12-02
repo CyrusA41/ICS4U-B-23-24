@@ -10,7 +10,7 @@
     <nav class="navbar has-shadow is-white">
         <div class="navbar-brand">
             <a href="sportsWebsite.html" class="navbar-item">
-                <img src="pllogo.png" alt="site logo" style="max-height: 70px" class="px=2 py=2">
+                <img src="img/pllogo.png" alt="site logo" style="max-height: 70px" class="px=2 py=2">
             </a>
             <a class="navbar-burger" id="burger">
                 <span></span>
@@ -36,7 +36,7 @@
             <label for="endDate">End Date: </label>
             <input type="date" id="endDate">
 
-            <button type="button" id="filterButton">Filter Matches</button>
+            <button type="button" id="filterButton" onclick="filterDates()">Filter Matches</button>
         </form>
         <div class="columns is-multiline" id="match-container"></div>
         </div>
@@ -108,6 +108,6 @@
     </form>
     </div>
 
-    <script src="matches.js"></script>
+    <script src="js/matches.js"></script>
 </body>
 </html>
